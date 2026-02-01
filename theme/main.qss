@@ -1,0 +1,98 @@
+/* Main Window and General Background */
+QMainWindow, QWidget {
+    background-color: #121212;
+    color: #E0E0E0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 14px;
+}
+
+/* ToolBar Styling */
+QToolBar {
+    background-color: #1E1E1E;
+    border-bottom: 1px solid #333333;
+    spacing: 10px;
+    padding: 5px;
+}
+
+/* Side Panels / Dock Widgets */
+QDockWidget {
+    titlebar-close-icon: none;
+    titlebar-normal-icon: none;
+}
+
+QDockWidget::title {
+    background-color: #1E1E1E;
+    text-align: center;
+    padding: 5px;
+}
+
+/* Buttons */
+QPushButton {
+    background-color: #2D2D2D;
+    border: 1px solid #3D3D3D;
+    border-radius: 5px;
+    padding: 8px 15px;
+    color: #FFFFFF;
+}
+
+QPushButton:hover {
+    background-color: #3D3D3D;
+    border: 1px solid #0078D4; /* Electric Blue border on hover */
+}
+
+QPushButton:pressed {
+    background-color: #005A9E;
+}
+
+/* QStackedWidget Styling (The Container) */
+QStackedWidget {
+    background-color: #121212;
+    border: none;
+}
+
+/* Inputs & Text Edits */
+QLineEdit, QTextEdit, QPlainTextEdit {
+    background-color: #1E1E1E;
+    border: 1px solid #333333;
+    border-radius: 3px;
+    padding: 5px;
+    selection-background-color: #0078D4;
+}
+
+/* ScrollBars */
+QScrollBar:vertical {
+    border: none;
+    background: #121212;
+    width: 10px;
+    margin: 0px;
+}
+
+QScrollBar::handle:vertical {
+    background: #333333;
+    min-height: 20px;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #444444;
+}
+
+/* Labels */
+QLabel {
+    color: #B0B0B0;
+}
+
+QToolBar QToolButton {
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+QToolBar QToolButton:hover {
+    background-color: #3D3D3D;
+}
+
+QToolBar QToolButton:disabled {
+    color: #555555;
+}
